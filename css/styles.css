@@ -1,0 +1,226 @@
+:root {
+  /* Основные шрифты */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+  --accent-cl: #2196f3;
+
+  /* Светлая тема текста */
+  --secondary-txt--mode-light: rgba(255, 255, 255, 0.6);
+  --main-txt--mode-light: #ffffff;
+
+  /* Темная тема текста*/
+  --secondary-txt--mode-dark: #212121;
+  --main-txt--mode-dark: #757575;
+
+  /* Светлая тема фона*/
+  --secondary-bg--mode-light: #ffffff;
+
+  /* Темная тема фона*/
+  --primary-bg--mode-dark: #2f303a;
+  --secondary-bg--mode-dark: #f5f4fa;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: var(--main-txt--mode-dark);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.header {
+  background-color: var(--secondary-bg--mode-light);
+}
+
+.hero,
+.footer {
+  background-color: var(--primary-bg--mode-dark);
+}
+
+.team {
+  background-color: var(--secondary-bg--mode-dark);
+}
+
+.logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-cl);
+}
+.logo-header {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--secondary-txt--mode-dark);
+}
+.logo-footer {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-txt--mode-light);
+}
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  color: var(--secondary-txt--mode-dark);
+}
+.nav-link {
+  color: inherit;
+}
+
+.nav-list .link.current {
+  color: var(--accent-cl);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-header-link:hover,
+.contacts-header-link:focus {
+  color: var(--accent-cl);
+}
+
+.contacts-header-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.contacts-header-link {
+  color: inherit;
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--main-txt--mode-light);
+}
+.hero-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  color: var(--main-txt--mode-light);
+  background-color: var(--accent-cl);
+
+  cursor: pointer;
+}
+
+.features-subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--secondary-txt--mode-dark);
+}
+.projects-title,
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt--mode-dark);
+}
+.team-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+
+  letter-spacing: 0.03em;
+
+  color: var(--secondary-txt--mode-dark);
+}
+.team-text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.contacts-footer-address {
+  font-style: normal;
+  color: var(--main-txt--mode-light);
+}
+
+.contacts-footer-address:hover,
+.contacts-footer-address:focus,
+.contacts-footer-link:hover,
+.contacts-footer-link:focus {
+  color: var(--accent-cl);
+}
+
+.contacts-footer-link {
+  font-style: normal;
+  color: var(--secondary-txt--mode-light);
+}
+
+.radio-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  cursor: pointer;
+  color: var(--secondary-txt--mode-dark);
+  background-color: var(--secondary-bg--mode-dark);
+}
+
+.radio-btn:hover,
+.radio-btn:focus {
+  color: var(--main-txt--mode-light);
+  background-color: var(--accent-cl);
+}
+
+.portfolio-projects-subtitle {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
+
+  color: var(--secondary-txt--mode-dark);
+}
+.portfolio-projects-text {
+  font-size: 16px;
+  line-height: 1.88;
+
+  color: var(--main-txt--mode-dark);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
