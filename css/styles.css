@@ -18,6 +18,9 @@
   /* Темная тема фона*/
   --primary-bg--mode-dark: #2f303a;
   --secondary-bg--mode-dark: #f5f4fa;
+
+  /*Зазор между карточками*/
+  --card-set-gap: 30px;
 }
 
 body {
@@ -177,8 +180,7 @@ p:last-child {
 }
 
 .hero-title {
-  margin-bottom: 30px;
-  outline: auto;
+  margin-bottom: var(--card-set-gap);
 
   font-weight: 900;
   font-size: 44px;
@@ -224,7 +226,7 @@ p:last-child {
 }
 
 .features-item:not(:first-child) {
-  margin-left: 30px;
+  margin-left: var(--card-set-gap);
 }
 
 .features-subtitle {
@@ -248,18 +250,45 @@ p:last-child {
   outline: auto;
 }
 
-.projects-title {
+.projects-title,
+.team-title {
   margin-bottom: 50px;
 }
 
 .projects-item:not(:first-child) {
-  margin-left: 30px;
+  margin-left: var(--card-set-gap);
 }
 
 /*Наша команда*/
 
 .team {
   background-color: var(--secondary-bg--mode-dark);
+  outline: auto;
+}
+
+.team-item:not(:first-child) {
+  margin-left: var(--card-set-gap);
+}
+
+.team-item {
+  text-align: center;
+  background-color: var(--secondary-bg--mode-light);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: var(--card-set-gap);
+  outline: auto;
+}
+
+.team-list {
+  display: flex;
+  outline: auto;
+}
+
+.team-subtitle {
+  padding-top: var(--card-set-gap);
+  padding-bottom: 10px;
+  margin-bottom: 0;
 }
 
 .projects-title,
@@ -272,6 +301,7 @@ p:last-child {
 
   color: var(--secondary-txt--mode-dark);
 }
+
 .team-subtitle {
   font-weight: 500;
   font-size: 16px;
@@ -287,6 +317,11 @@ p:last-child {
 }
 
 /*Футер*/
+
+.contacts-footer-list {
+  display: flex;
+  flex-direction: column;
+}
 
 .footer {
   background-color: var(--primary-bg--mode-dark);
@@ -315,6 +350,12 @@ p:last-child {
   color: var(--secondary-txt--mode-light);
 }
 
+.contacts-footer-item:not(:first-child) {
+  margin-bottom: 9px;
+}
+
+/*Портфолио*/
+
 .radio-btn {
   font-weight: 500;
   font-size: 16px;
@@ -328,6 +369,23 @@ p:last-child {
 .radio-btn:focus {
   color: var(--main-txt--mode-light);
   background-color: var(--accent-cl);
+}
+
+.portfolio-projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--card-set-gap));
+  margin-top: calc(-1 * var(--card-set-gap));
+}
+
+.portfolio-projects-item {
+  outline: auto;
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+  margin-left: var(--card-set-gap);
+  margin-top: var(--card-set-gap);
+
+  background: var(--secondary-bg--mode-light);
+  border: 1px solid #eeeeee;
 }
 
 .portfolio-projects-subtitle {
@@ -344,6 +402,10 @@ p:last-child {
   line-height: 1.88;
 
   color: var(--main-txt--mode-dark);
+}
+
+.card-content {
+  padding: 20px 24px;
 }
 
 .visually-hidden {
