@@ -56,17 +56,30 @@ p:last-child {
   text-decoration: none;
 }
 
-.header {
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-container,
+.nav-list,
+.contacts-header-list {
+  display: flex;
+  align-items: center;
   background-color: var(--secondary-bg--mode-light);
 }
 
-.hero,
-.footer {
-  background-color: var(--primary-bg--mode-dark);
-}
-
-.team {
-  background-color: var(--secondary-bg--mode-dark);
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .logo {
@@ -94,6 +107,8 @@ p:last-child {
   color: var(--main-txt--mode-light);
 }
 .nav {
+  margin-left: 93px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -101,6 +116,7 @@ p:last-child {
 
   color: var(--secondary-txt--mode-dark);
 }
+
 .nav-link {
   color: inherit;
 }
@@ -116,6 +132,20 @@ p:last-child {
   color: var(--accent-cl);
 }
 
+.contacts-header-item,
+.nav-item {
+  margin-left: 50px;
+}
+
+.nav-item:first-child,
+.contacts-header-item:first-child {
+  margin: 0;
+}
+
+.contacts-header-list {
+  margin-left: auto;
+}
+
 .contacts-header-list {
   font-weight: 500;
   font-size: 14px;
@@ -125,6 +155,12 @@ p:last-child {
 
 .contacts-header-link {
   color: inherit;
+}
+
+.hero-container {
+  text-align: center;
+
+  background-color: var(--primary-bg--mode-dark);
 }
 
 .hero-title {
@@ -139,6 +175,11 @@ p:last-child {
   color: var(--main-txt--mode-light);
 }
 .hero-btn {
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -150,6 +191,11 @@ p:last-child {
   cursor: pointer;
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #188ce8;
+}
+
 .features-subtitle {
   font-weight: 700;
   font-size: 14px;
@@ -159,6 +205,11 @@ p:last-child {
 
   color: var(--secondary-txt--mode-dark);
 }
+
+.team-container {
+  background-color: var(--secondary-bg--mode-dark);
+}
+
 .projects-title,
 .team-title {
   font-weight: 700;
@@ -181,6 +232,10 @@ p:last-child {
 .team-text {
   font-size: 16px;
   line-height: 1.19;
+}
+
+.footer-container {
+  background-color: var(--primary-bg--mode-dark);
 }
 
 .contacts-footer-address {
