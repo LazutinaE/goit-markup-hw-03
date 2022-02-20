@@ -34,19 +34,18 @@ body {
 
 /*Доп. классы*/
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 h1,
 h2,
 h3,
 h4,
 p {
   margin-top: 0;
-}
-
-h1:last-child,
-h2:last-child,
-h3:last-child,
-h4:last-child,
-p:last-child {
   margin-bottom: 0;
 }
 
@@ -176,7 +175,7 @@ p:last-child {
 .hero {
   background-color: var(--primary-bg--mode-dark);
   text-align: center;
-  padding: 200px 452px;
+  padding: 200px 0;
 }
 
 .hero-title {
@@ -239,18 +238,10 @@ p:last-child {
   color: var(--secondary-txt--mode-dark);
 }
 
-.features {
-  padding-top: 94px;
-  padding-right: 215px;
-  padding-bottom: 0;
-  padding-left: 215px;
-}
-
 /*Примеры работ*/
 
 .projects {
-  padding-right: 215px;
-  padding-left: 215px;
+  padding-top: 0;
 }
 
 .projects-title {
@@ -274,8 +265,6 @@ p:last-child {
 
 .team {
   background-color: var(--secondary-bg--mode-dark);
-  padding-left: 215px;
-  padding-right: 215px;
 }
 
 .team-item:not(:first-child) {
@@ -288,7 +277,6 @@ p:last-child {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  padding-bottom: var(--card-set-gap);
 }
 
 .team-list {
@@ -296,9 +284,7 @@ p:last-child {
 }
 
 .team-subtitle {
-  padding-top: var(--card-set-gap);
-  padding-bottom: 10px;
-  margin-bottom: 0;
+  margin-bottom: 10px;
 }
 
 .projects-title,
@@ -310,6 +296,11 @@ p:last-child {
   letter-spacing: 0.03em;
 
   color: var(--secondary-txt--mode-dark);
+}
+
+.team-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-subtitle {
@@ -331,9 +322,7 @@ p:last-child {
 .footer {
   background-color: var(--primary-bg--mode-dark);
   padding-top: 60px;
-  padding-right: 1154px;
   padding-bottom: 60px;
-  padding-left: 215px;
 }
 
 .contacts-footer-address {
@@ -369,8 +358,7 @@ p:last-child {
   justify-content: center;
   align-content: center;
 
-  padding-top: 94px;
-  margin-bottom: 56px;
+  margin-bottom: 50px;
 }
 
 .radio-btns-item:not(:first-child) {
@@ -417,6 +405,7 @@ p:last-child {
 }
 
 .portfolio-projects-subtitle {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
